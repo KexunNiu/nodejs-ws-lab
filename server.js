@@ -50,6 +50,18 @@ function setupWSServer(server) {
     const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
     console.log(`WebSocketServer listening on ${bind}`);
   });
+
+  let actorCoordinates = { };
+  wss.on("connection", (ws) => {
+    ws.on("message", (rawMsg) => {
+      console.log(`RECV: ${rawMsg}`);
+      const incommingMessage = JSON.parse(rawMsg);
+      actorCoordinates[incommingMessage.id] = {
+        x: incommingMessage.x,
+        y: incommingMessage.y,
+        frame: incommingMessage.frame
+      }
+      
   return wss;
 }
 

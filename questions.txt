@@ -1,0 +1,18 @@
+Q1. I saw Node.js WebSockets Lab header, and a black window there is a yello anime rabbit in it,
+when I put my cursor on and drag it, it turns red and move with my cursor. 
+In the terminal, it always updates the 2D coordinates with me. Eg: RECV: {"x":100,"y":101}
+
+Q2. TypeScript is OOP programming language, but Javascript is web programming language.
+TypeScript can be used anywhere including browser, device or OS, but Javascript can only be used on web browser.
+TypeScript supports interfaces but JavaScript does not.
+
+Q3. The bundlers makes sure that the import path is correct implemented.
+So that the development workflow doesn't have to change. And the bundlers can reduce the processing time,
+because they are packed up.
+
+Q4. 0 -Connecting:Socket has been created. The connection is not yet open.
+    1- open: The connection is open and ready to communicate.
+    2- closing:The connection is in the process of closing.
+    3- The connection is closed or couldn't be opened.
+
+Q5. https://github.com/KexunNiu/nodejs-ws-lab.git
